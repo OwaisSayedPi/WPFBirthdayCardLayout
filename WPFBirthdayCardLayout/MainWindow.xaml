@@ -1,0 +1,110 @@
+﻿<Window x:Class="WPFBirthdayCardLayout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBirthdayCardLayout"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="500"
+        Background="#FFFF7C90"
+        MaxHeight="800" MaxWidth="500">
+    <Window.Resources>
+        <Style TargetType="Ellipse">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="50"/>
+        </Style>
+        <Style TargetType="Label" x:Key="StyleName">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="10 0 0 5"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="Label" x:Key="StyleAge">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+            <Setter Property="Foreground" Value="#FF4E5573"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="10 0 0 5"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+    </Window.Resources>
+    <!--<Border 
+                BorderBrush="Black"
+                BorderThickness="1"
+                CornerRadius="2"
+                    Background="White">
+        <Border.Effect>
+            <DropShadowEffect/>
+        </Border.Effect>
+    </Border>-->
+    <Grid VerticalAlignment="Top" Margin="0 50 0 0" HorizontalAlignment="Center">
+        <Border Background="White" BorderBrush="White"
+                BorderThickness="2"
+                CornerRadius="6">
+            <Border.Effect>
+                <DropShadowEffect Color="#FFB7868E" BlurRadius="10" ShadowDepth="10"/>
+            </Border.Effect>
+        </Border>
+        <StackPanel Margin="15" Width="300" Height="400">
+            <Label Content="5 birthdays today" FontSize="16" FontWeight="Bold" FontFamily="Bahnschrift SemiBold" />
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0 10 0 5">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/pexels-photo-7171858.jpeg" Stretch="Fill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Bertie Yates" Style="{StaticResource StyleName}"/>
+                    <Label Content="29 Years" Style="{StaticResource StyleAge}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0 5 0 5">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\Owais.Sayed\Downloads\pexels-photo-5384445.jpeg" Stretch="Fill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Hester Hogan" Style="{StaticResource StyleName}"/>
+                    <Label Content="32 Years" Style="{StaticResource StyleAge}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0 5 0 5">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\Owais.Sayed\Downloads\pexels-photo-3796217.jpeg" Stretch="Fill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Larry Little" Style="{StaticResource StyleName}"/>
+                    <Label Content="36 Years" Style="{StaticResource StyleAge}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0 5 0 5">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\Owais.Sayed\Downloads\pexels-photo-5792641.jpeg" Stretch="Fill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Sean Walsh" Style="{StaticResource StyleName}"/>
+                    <Label Content="34 Years" Style="{StaticResource StyleAge}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50" Margin="0 5 0 5">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\Owais.Sayed\Downloads\pexels-photo-8090137.jpeg" Stretch="Fill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <StackPanel VerticalAlignment="Center">
+                    <Label Content="Lola Gardner" Style="{StaticResource StyleName}"/>
+                    <Label Content="29 Years" Style="{StaticResource StyleAge}"/>
+                </StackPanel>
+            </StackPanel>
+            <Button Content="Clear All" Height="30" Margin="0 10 0 10" Background="#FFFF7C90" Foreground="White" FontWeight="Bold" FontFamily="Arial" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+    
+</Window>
